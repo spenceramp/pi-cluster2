@@ -18,3 +18,10 @@ spec:
           image: sissbruecker/linkding:1.31.0
           ports:
             - containerPort: 9090
+          volumeMounts: 
+          - mountPath: "/tmp/"
+            name: linkding-pvc
+      volumes:
+      - name: linkding-pvc
+        PersistentVolumeClaim:
+        claimName: linkding-data-pvc  
