@@ -10,6 +10,6 @@ spec:
   accessModes:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Retain
-  local:
+  hostPatj:
     path: /data
   
