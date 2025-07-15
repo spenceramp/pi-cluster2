@@ -19,7 +19,7 @@ spec:
           ports:
             - containerPort: 9090
           volumeMounts: 
-          - mountPath: "/tmp/"
+          - mountPath: /tmp
             name: linkding-pvc
       volumes:
       - name: linkding-pvc
